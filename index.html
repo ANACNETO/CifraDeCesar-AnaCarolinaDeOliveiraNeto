@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de Cesar</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/cifra-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div>
+        <h1>Cifra de César</h1>
+        <p>Siga as etapas para codificar ou descodificar o seu código!</p>
+    </div>
+
+    <form method="post" onsubmit="cesar(); return false;">
+        <textarea name="texto-entrada" id="texto-entrada" cols="50" rows="3"
+            placeholder="Insira a mensagem e clique na opção desejada abaixo"></textarea>
+
+        <div class="radios">
+            <label for="codificar">Codificar</label>
+            <input type="radio" name="radioCod" id="codificar" value="codificar" checked>
+
+            <label for="descodificar">Descodificar</label>
+            <input type="radio" name="radioCod" id="descodificar" value="descodificar">
+            <br><br>
+        </div>
+
+        <label for="cifra">Cifra</label>
+        <input type="text" name="cifra" id="cifra" maxlength="1" pattern="[0-9a-zA-Z]" required><br>
+
+        <input type="submit" id="executar" value="Executar"><br><br>
+    </form>
+    <h2 id="resultado"> Resultado: </h2>
+
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
