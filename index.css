@@ -1,0 +1,48 @@
+*{  
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(25 25 25);
+    padding: 25px;
+    margin: 0;
+}
+
+h1,
+h2{
+    color: rgb(166, 247, 80);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+form,
+p {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    border-radius: 30px;
+    color: rgb(166, 247, 80);
+}
+
+#cifra {
+    width: 4%;
+    background-color: rgb(166, 247, 80);
+    border-radius: 30px;
+}
+
+#executar{
+   background-color: rgb(166, 247, 80);
+   border-radius: 30px;
+}
+
+
+::-webkit-input-placeholder {
+    color: rgb(166, 247, 80);;
+
+}
+
+::placeholder{
+    width: 30;
+}
